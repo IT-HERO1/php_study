@@ -1,0 +1,9 @@
+services:
+  php:
+    container_name: php83_container
+    build:
+      context: './docker/php/'
+    volumes:
+      - './src/:/var/www/html/src/'
+    ports:
+      - '80:80'
